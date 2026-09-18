@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Distribuciones de la Sabana</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+|
+    <!-- BARRA SUPERIOR -->
+    <div class="barra-superior">
+        <span>🚚 Envíos a toda la Sabana</span>
+        <span>🛡️ Garantía en todos nuestros productos</span>
+        <span>🎧 Soporte 24/7</span>
+    </div>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+
+        <div class="logo">
+            🛒
+            <div>
+                <strong>DISTRIBUCIONES</strong>
+                <small>DE LA SABANA</small>
+            </div>
+        </div>
+
+        <!-- BUSCADOR -->
+        <div class="buscador">
+            <input 
+                type="text" 
+                id="buscador"
+                placeholder="Buscar productos..."
+            >
+
+            <button onclick="buscarProducto()">🔍</button>
+        </div>
+
+        <!-- OPCIONES -->
+        <div class="acciones">
+            <span>👤 Mi cuenta</span>
+            <span>🛒 Carrito <b id="contador">0</b></span>
+        </div>
+
+    </header>
+
+    <!-- MENÚ -->
+    <nav class="menu">
+
+        <a href="#" class="activo">Inicio</a>
+
+        <a href="#productos">Productos</a>
+
+        <a href="#categorias">Categorías</a>
+
+        <a href="#ofertas">Ofertas</a>
+
+        <a href="#nosotros">Nosotros</a>
+
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-texto">
+
+            <p class="etiqueta">TECNOLOGÍA PARA TODOS</p>
+
+            <h1>
+                Tecnología que
+                <br>
+                conecta tu mundo
+            </h1>
+
+            <p>
+                Encuentra computadores, monitores, accesorios,
+                redes y mucho más con calidad, garantía y
+                excelentes precios.
+            </p>
+
+            <a href="#productos" class="boton">
+                Ver catálogo
+            </a>
+
+        </div>
+
+        <div class="hero-productos">
+            💻
+            🎧
+            🖥️
+        </div>
+
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios">
+            </section>
+
+
+    <!-- VIDEO PROMOCIONAL -->
+    <section class="video-promocional">
+
+        <div class="titulo-seccion">
+            <p>CONOCE NUESTROS PRODUCTOS</p>
+            <h2>Distribuciones de la Sabana</h2>
+        </div>
+
+        <video controls autoplay muted loop playsinline>
+            <source src="videos/VideoProject.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+
+    </section>
+
+
+    <!-- SERVICIOS -->
+    <section class="servicios">
+
+        <div class="servicio">
+            <div class="icono">🚚</div>
+            <div>
+                <h3>Envíos rápidos</h3>
+                <p>A toda la región</p>
+            </div>
+        </div>
+
+        <div class="servicio">
+            <div class="icono">🛡️</div>
+            <div>
+                <h3>Productos garantizados</h3>
+                <p>Calidad asegurada</p>
+            </div>
+        </div>
+
+        <div class="servicio">
+            <div class="icono">💳</div>
+            <div>
+                <h3>Pagos seguros</h3>
+                <p>Compra con confianza</p>
+            </div>
+        </div>
+
+        <div class="servicio">
+            <div class="icono">🎧</div>
+            <div>
+                <h3>Soporte 24/7</h3>
+                <p>Estamos para ayudarte</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section id="categorias" class="seccion">
+
+        <div class="titulo-seccion">
+            <p>CATEGORÍAS</p>
+            <h2>Encuentra lo que necesitas</h2>
+        </div>
+
+        <div class="categorias">
+
+            <div class="categoria">
+                <div class="categoria-icono">💻</div>
+                <h3>Computadores</h3>
+                <p>Portátiles y PC</p>
+            </div>
+
+            <div class="categoria">
+                <div class="categoria-icono">🖥️</div>
+                <h3>Monitores</h3>
+                <p>Calidad de imagen</p>
+            </div>
+
+            <div class="categoria">
+                <div class="categoria-icono">🖱️</div>
+                <h3>Mouse</h3>
+                <p>Para trabajo y gaming</p>
+            </div>
+
+            <div class="categoria">
+                <div class="categoria-icono">⌨️</div>
+                <h3>Teclados</h3>
+                <p>Comodidad y precisión</p>
+            </div>
+
+            <div class="categoria">
+                <div class="categoria-icono">📡</div>
+                <h3>Redes</h3>
+                <p>Conectividad</p>
+            </div>
+
+            <div class="categoria">
+                <div class="categoria-icono">🎧</div>
+                <h3>Accesorios</h3>
+                <p>Todo para tu equipo</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="seccion productos-seccion">
+
+        <div class="titulo-seccion">
+            <p>PRODUCTOS DESTACADOS</p>
+            <h2>Lo más vendido</h2>
+        </div>
+
+        <div class="productos">
+
+            <article class="producto">
+
+                <div class="producto-imagen">
+                    💻
+                </div>
+
+                <span class="etiqueta-producto">
+                    DESTACADO
+                </span>
+
+                <h3>Portátil profesional</h3>
+
+                <p>
+                    Equipo de alto rendimiento
+                    para trabajo y estudio.
+                </p>
+
+                <strong class="precio">
+                    $2.499.000
+                </strong>
+
+                <button 
+                    class="boton-carrito"
+                    onclick="agregarCarrito()">
+                    Agregar al carrito
+                </button>
+
+            </article>
+
+            <article class="producto">
+
+                <div class="producto-imagen">
+                    🖥️
+                </div>
+
+                <span class="etiqueta-producto">
+                    OFERTA
+                </span>
+
+                <h3>Monitor Full HD</h3>
+
+                <p>
+                    Pantalla de alta definición
+                    para trabajo y entretenimiento.
+                </p>
+
+                <strong class="precio">
+                    $699.000
+                </strong>
+
+                <button 
+                    class="boton-carrito"
+                    onclick="agregarCarrito()">
+                    Agregar al carrito
+                </button>
+
+            </article>
+
+            <article class="producto">
+
+                <div class="producto-imagen">
+                    🎧
+                </div>
+
+                <span class="etiqueta-producto">
+                    NUEVO
+                </span>
+
+                <h3>Audífonos inalámbricos</h3>
+
+                <p>
+                    Sonido de alta calidad
+                    y conexión inalámbrica.
+                </p>
+
+                <strong class="precio">
+                    $249.000
+                </strong>
+
+                <button 
+                    class="boton-carrito"
+                    onclick="agregarCarrito()">
+                    Agregar al carrito
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- OFERTA -->
+    <section id="ofertas" class="oferta">
+
+        <div>
+            <p>OFERTA ESPECIAL</p>
+
+            <h2>
+                Envío gratis durante
+                30 días
+            </h2>
+
+            <p>
+                Compra productos seleccionados y recibe
+                envío gratis en toda la Sabana.
+            </p>
+
+            <button class="boton boton-blanco">
+                Ver ofertas
+            </button>
+        </div>
+
+        <div class="oferta-iconos">
+            🚚
+        </div>
+
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="nosotros">
+
+        <div>
+            <p class="titulo-pequeno">SOBRE NOSOTROS</p>
+
+            <h2>
+                Tecnología cerca de ti
+            </h2>
+
+            <p>
+                Distribuciones de la Sabana es una plataforma
+                dedicada a la comercialización y distribución
+                de productos tecnológicos en la región de la
+                Sabana.
+            </p>
+
+            <p>
+                Nuestro objetivo es ofrecer productos de
+                calidad, precios competitivos y una experiencia
+                de compra sencilla y segura.
+            </p>
+        </div>
+
+        <div class="nosotros-caja">
+            <span>🏆</span>
+            <h3>Calidad y confianza</h3>
+            <p>
+                Trabajamos para brindar la mejor experiencia
+                a nuestros clientes.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+
+        <h2>¿Necesitas ayuda?</h2>
+
+        <p>
+            SIEMPRE DISPUESTO A AYUDARTE, CONTACTANOS AL WHATSAPP
+        </p>
+        <a 
+    href="https://wa.me/573223054945?text=Hola,%20quiero%20recibir%20información%20sobre%20sus%20productos."
+    target="_blank"
+    class="whatsapp">
+    
+    <span class="whatsapp-icon">☏</span>
+    
+    <span>
+        <strong>WhatsApp</strong>
+        <small>Escríbenos</small>
+    </span>
+
+</a>
+
+        <div class="contacto-datos">
+
+            <span>📞 +57 3223054945</span>
+
+           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Cesarjulianvalderramaaguilar@gmail.com"
+   target="_blank">
+    📧 cesarjulianvalderramaaguilar@gmail.com
+</a>
+</a>
+            <span>📍 Sabana de Bogotá, Colombia</span>
+
+        </div>
+
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <div class="footer-logo">
+            🛒
+            <strong>Distribuciones de la Sabana</strong>
+        </div>
+
+        <p>
+            © 2026 Distribuciones de la Sabana.
+            Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
